@@ -42,10 +42,18 @@ public class Main {
             System.out.printf(FairyTail.get(i)+"\n");
         }*/
 
-    var mangas = List.of(fairyTail56,fairyTail55);
+
     var library = new Library();
     library.add("FairyTail",fairyTail55);
-        library.add("FairyTail56",fairyTail55);
         System.out.println(library);
+        library.add("FairyTail",fairyTail56);
+        library.add("FairyTail",fairyTail57);
+        //library.add("FairyTail56",fairyTail55);
+        System.out.println(library);
+       // library.delete("FairyTail","fairyTail56");
+        System.out.println(library);
+        library.acquire("FairyTail",fairyTail55);
+        System.out.println(library);
+
     }
 }

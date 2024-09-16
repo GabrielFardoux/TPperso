@@ -20,6 +20,7 @@ public class Manga {
     public int getTome(){
         return tome;
     }
+    public String findName(String name){ return name;}
 
 
 
