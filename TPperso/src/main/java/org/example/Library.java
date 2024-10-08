@@ -1,9 +1,11 @@
 package org.example;
 
-public interface Library {
-    void add(String collectionTitle, Manga manga);
+import java.io.IOException;
 
-    void delete(String collectionTitle, String mangaName);
+public interface Library {
+    void add(String collectionTitle, Manga manga) throws IOException;
+
+    void delete(String collectionTitle, String mangaName) throws IOException;
 
     void acquire(String collectionTitle, Manga manga);
 }

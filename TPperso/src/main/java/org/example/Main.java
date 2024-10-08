@@ -1,12 +1,13 @@
 package org.example;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         var fairyTail55 = new Manga("FairyTail", 55, false);
         var fairyTail56 = new Manga("FairyTail56", 56, true);
         var fairyTail57 = new Manga("FairyTail57", 56, true);
@@ -42,6 +43,7 @@ public class Main {
         Library library = new InFilesLibrary();
         library.add("FairyTail", fairyTail55);
         System.out.println(library);
+
         library.add("FairyTail", fairyTail56);
         library.add("FairyTail", fairyTail57);
         //library.add("FairyTail56",fairyTail55);
