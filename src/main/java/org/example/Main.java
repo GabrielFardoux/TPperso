@@ -39,6 +39,7 @@ public class Main {
         }*/
 
 
+        System.out.println("PLAY WITH FILES");
         //Library library = new InMemoryLibrary();
         Library library = new InFilesLibrary();
         library.add("FairyTail", fairyTail55);
@@ -48,10 +49,10 @@ public class Main {
         library.add("FairyTail", fairyTail57);
         //library.add("FairyTail56",fairyTail55);
         System.out.println(library);
-        library.delete("FairyTail", "fairyTail56");
-        System.out.println(library);
-        library.acquire("FairyTail", fairyTail55);
-        System.out.println(library);
+//        library.delete("FairyTail", "fairyTail56");
+//        System.out.println(library);
+//        library.acquire("FairyTail", fairyTail55);
+//        System.out.println(library);
 
     }
 }
